@@ -3,7 +3,7 @@ Sorting data on a stack with a limited set of instructions
 
 ## Overview
 
-This project from School 42 curriculum focuses on algorithm design and optimization. The goal is to sort a random set of numbers in ascending order using two stacks and a limited set of operations, including swapping, pushing, popping and rotating elements. The challenge lies in minimizing the number of moves required.
+This project from [School 42](https://42london.com) curriculum focuses on algorithm design and optimization. The goal is to sort a random set of numbers in ascending order using two stacks and a limited set of operations, including swapping, pushing, popping and rotating elements. The challenge lies in minimizing the number of moves required.
 
 ## Specifications
 At the beginning there are two stacks: A and B. Stack A contains a random amount of negative and/or positive numbers which cannot be duplicated, and the stack B is empty. The goal is to sort in ascending order numbers into stack A, using only the following operations:
