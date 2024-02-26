@@ -7,19 +7,19 @@ LIBFT_PATH := libft/
 LIBFT := libft.a
 NAME := push_swap
 
-all: $(LIBFT) $(NAME)
+all: libft $(NAME)
 
 $(NAME): $(OFILES)
 	$(CC) $(OFILES) $(LIBFT_PATH)$(LIBFT) -o $(NAME)
 
 %.o: %.c
-	$(CC) -c $(CFLAGS) -I$(INCLUDE) -I$(LIBFT_PATH)$(INCLUDE) $^ -o $@ -g
+	$(CC) -c $(CFLAGS) -I$(INCLUDE) -I$(LIBFT_PATH)$(INCLUDE) $^ -o $@
 
-$(LIBFT):
+libft:
 	@make -C libft
 
 clean:
-	@make -C libft clean 
+	@make -C libft clean
 	rm -f $(OFILES)
 
 fclean: clean
@@ -28,4 +28,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: clean fclean re $(LIBFT)
+.PHONY: clean fclean re libft
